@@ -57,7 +57,7 @@ const Booking = ({ searchParams }) => {
           current == 4 ? "hidden" : "flex"
         } justify-between items-center px-[10%] py-3`}
       >
-        <button className="bg-slate-100 px-10 py-3 rounded-full">Back</button>
+        <Link href={`/booking?index=${current - 1}`} className="bg-slate-100 px-10 py-3 rounded-full">Back</Link>
         <Link
           href={`/booking?index=${current + 1}`}
           className="bg-third-color text-white px-10 py-3 rounded-full"
